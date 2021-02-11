@@ -5,6 +5,8 @@ class CountdownTimer {
     this._intervalId = null;
 
     this._refs = this._getRefs(selector);
+
+    this._start();
   }
 
   _getRefs(root) {
@@ -67,5 +69,3 @@ const timer = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('Jul 17, 2021'),
 });
-
-timer._start();
